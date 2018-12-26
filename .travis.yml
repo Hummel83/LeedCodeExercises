@@ -2,14 +2,18 @@ language: csharp
 
 Solution: Tests.sln
 
-mono: 5.2.0
-dotnet: 2.0.0
+# mono: 5.2.0
+dotnet: 2.1.0
 
 install:  
-- nuget install NUnit.Runners -version 3.9.0 
 - dotnet restore Data
+-dotnet restore DataTests
 
 #script:
 
-- xbuild /p:Configuration=Debug Tests.sln
-- mono./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
+  - ./build.sh
+  - ./test.sh
+  - grep "Test Results" build.log
+
+# - xbuild /p:Configuration=Debug Tests.sln
+# - mono./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
