@@ -2,7 +2,7 @@ language: csharp
 
 Solution: Tests.sln
 
-dotnet: 2.1.0
+dotnet: 2.0.0
 mono: none
 dist: trusty
 
