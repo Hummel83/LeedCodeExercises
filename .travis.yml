@@ -1,11 +1,15 @@
 language: csharp
 mono: none
+dotnet: 1.1.5
 
 solution: Tests.sln
 
 install:  
-  - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
+	- nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner	
+	- nuget restore Tests.sln
+	
 
 script:
  - dotnet restore
  - xbuild /p:Configuration=Release Tests.sln
+
