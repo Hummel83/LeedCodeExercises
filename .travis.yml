@@ -1,7 +1,7 @@
 language: csharp
 solution: Tests.sln
 
-dotnet: 2.0.0
+dotnet: 1.1.5
 mono: none
 
 install: 
