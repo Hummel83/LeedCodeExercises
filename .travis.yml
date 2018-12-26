@@ -2,13 +2,13 @@ language: csharp
 
 Solution: Tests.sln
 
-#mono: 5.2.0
+dotnet: 2.1.0
 mono: none
-dotnet: 2.0.0
 dist: trusty
 
 
 install:  
+- nuget install nunit.ConsoleRunner -version 3.9.0
 - dotnet restore Data
 - dotnet restore DataTests
 
