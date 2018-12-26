@@ -6,10 +6,9 @@ solution: Tests.sln
 
 install:  
 	- nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner	
-	- nuget restore Tests.sln
-	
+	- nuget restore Tests.sln	
 
 script:
  - dotnet restore
- - xbuild /p:Configuration=Release Tests.sln
+
 
