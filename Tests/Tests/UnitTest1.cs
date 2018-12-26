@@ -4,15 +4,15 @@ namespace Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
+
+      
 
         [Test]
-        public void Test1()
+        public void Builddatatbase_Test()
         {
-            Assert.Pass();
+            var muh = new DAL.BuildDatabase();
+            muh.CreateDb();
+           
         }
     }
 }

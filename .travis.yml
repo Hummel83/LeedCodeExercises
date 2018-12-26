@@ -1,0 +1,7 @@
+language: csharp
+
+solution: Tests.sln
+
+install:
+  - nuget restore Tests.sln
+  - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
