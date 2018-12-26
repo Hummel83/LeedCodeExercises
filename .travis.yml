@@ -13,5 +13,5 @@ install:
 
 #script:
 
-#- xbuild /p:Configuration=Release Tests.sln
-#- ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
+- xbuild /p:Configuration=Release Tests.sln
+ ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
