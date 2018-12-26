@@ -1,15 +1,16 @@
 language: csharp
 
+Solution: Tests.sln
+
 mono: 5.2.0
 dotnet: 2.0.0
 dist: trusty
 
 
 install:  
- 
-  - dotnet restore Data
-  - dotnet restore DataTests
-- nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
+- dotnet restore Data
+- dotnet restore DataTests
+- nuget install NUnit.Runners -Version 3.9.0 
 
 #script:
 
