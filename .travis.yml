@@ -1,19 +1,19 @@
 language: csharp
 solution: Tests.sln
 
-dotnet: 1.1.5
+dotnet: 2.1
 mono: none
 
 install: 
-	- nuget install NUnit.Runners -Version 3.9.0 
-	- nuget install NUnit.Console -Version 3.9.0 
+- nuget install NUnit.Runners -Version 3.9.0 
+- nuget install NUnit.Console -Version 3.9.0 
 
 #restore
-	-  nuget restore tests.sln
+-  nuget restore tests.sln
 	
 
 script:
-	- xbuild /p:Configuration=Debug Tests.sln
-	- ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
+- xbuild /p:Configuration=Debug Tests.sln
+- ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
 
 
