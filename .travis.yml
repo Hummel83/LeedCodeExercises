@@ -12,3 +12,6 @@ install:
 script:
   - msbuild /p:Configuration=Debug LeedCode.sln 
   -  ./LeedCodeExercises/testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/UnitTests.dll"
+
+after_success:
+- bash < (curl -s https://codecov.io/bash)
