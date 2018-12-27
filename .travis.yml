@@ -14,5 +14,4 @@ script:
 - mono  ./LeedCodeExercises/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/UnitTests.dll"     
 
 after_success:
-- make coverage
 - bash <(curl -s https://codecov.io/bash)
