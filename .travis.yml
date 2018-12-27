@@ -2,7 +2,7 @@ language: csharp
 
 Solution: Tests.sln
 
-mono: latest
+mono: 5.2.0
 dotnet: 2.0.0
 dist: trusty
 codecov : true
