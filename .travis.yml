@@ -2,7 +2,9 @@ language: csharp
 
 Solution: LeedCode.sln
 
-mono: 5.2.0
+mono: 5.10.0
+dist: trusty
+
 
 
 install:
@@ -11,6 +13,6 @@ install:
 
 
 script:
-  - xbuild /p:Configuration=Release LeedCode.sln
+  - msbuild /p:Configuration=Release LeedCode.sln
   - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./UnitTests/bin/Release/UnitTests.dll
 
