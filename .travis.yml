@@ -3,7 +3,7 @@ language: csharp
 Solution: Tests.sln
 
 dotnet: 2.0.0
-mono: latest
+mono: 5.2.0
 dist: trusty
 
 
@@ -17,4 +17,4 @@ script:
  - dotnet msbuild /p:Configuration=Debug Tests.sln
 
 #test
- - mono  ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
+ - dotnet msbuild ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
