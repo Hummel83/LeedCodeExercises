@@ -7,11 +7,12 @@ dist: trusty
 
 install:
   - nuget restore LeedCode.sln
- # - nuget install NUnit.ConsoleRunner -Version 3.9.0 
+ - nuget install NUnit.ConsoleRunner -Version 3.9.0 
 
 script:
   - msbuild /p:Configuration=Debug LeedCode.sln 
-#  -  ./LeedCodeExercises/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/UnitTests.dll"     
+- mono  ./LeedCodeExercises/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/UnitTests.dll"     
 
 after_success:
-- bash < (curl -s https://codecov.io/bash)
+- make coverage
+- bash <(curl -s https://codecov.io/bash)
