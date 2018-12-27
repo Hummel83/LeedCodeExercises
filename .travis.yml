@@ -14,6 +14,6 @@ install:
 
 
 script:
-  - dotnet test DataTests/DataTests --configuration Debug --framework netcoreapp2.0
+  - msbuild /p:Configuration=Debug solution-name.sln
   - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe "./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll"
 
