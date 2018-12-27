@@ -8,12 +8,12 @@ dist: trusty
 codecov : true
 
 install:  
-- nuget install nunit.ConsoleRunner -version 3.9.0 -OutputDirectory testrunner
+#- nget install nunit.ConsoleRunner -version 3.9.0 -OutputDirectory testrunner
 - dotnet restore Data
 - dotnet restore DataTests
 
 
 script:
   - donet /p:Configuration=Debug Tests.sln
-  - donet ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe "./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll"
+#  - donet ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe "./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll"
 
