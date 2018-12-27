@@ -11,9 +11,7 @@ install:
 - dotnet restore Data
 - dotnet restore DataTests
 
-script:
-#build
- - dotnet test DataTests/DataTests msbuild --configuration Debug --framework netcoreapp2.0
 
-#test
- - mono  ./testrunner/NUnit.ConsoleRunners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll
+script:
+  - xbuild /p:Configuration=Release solution-name.sln
+  - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Release/DataTests.dll
