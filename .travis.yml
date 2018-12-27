@@ -7,8 +7,8 @@ dist: trusty
 
 install:
   - nuget restore LeedCode.sln
-  - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
+  - nuget install NUnit.Runners -Version 3.9.0 
 
 script:
-  - msbuild /p:Configuration=Debug LeedCode.sln //p:targetframework=net452
-  - mono ./LeedCodeExercises/testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/net452/UnitTests.dll"
+  - msbuild /p:Configuration=Debug LeedCode.sln 
+  -  ./LeedCodeExercises/testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/UnitTests.dll"
