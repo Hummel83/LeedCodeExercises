@@ -13,7 +13,7 @@ install:
 
 script:
 #build
- - dotnet msbuild /p:Configuration=Debug Tests.sln
+ - dotnet test DataTests/DataTests msbuild --configuration Debug --framework netcoreapp2.0
 
 #test
- - mono  ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll
+ - mono  ./testrunner/NUnit.ConsoleRunners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll
