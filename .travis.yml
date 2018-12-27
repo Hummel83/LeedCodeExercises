@@ -11,5 +11,5 @@ install:
 
 script:
   - msbuild /p:Configuration=Release LeedCode.sln
-  - ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe
+  - ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe "/home/travis/build/Hummel83/LeedCodeExercises/UnitTests/bin/Release/UnitTests.dll"
 
