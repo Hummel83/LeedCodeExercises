@@ -2,17 +2,16 @@ language: csharp
 
 Solution: Tests.sln
 
-mono: none
+mono: 5.2.0
 dotnet: 2.0.0
 dist: trusty
-codecov : true
+
 
 install:  
-- dotnet restore Data
-- dotnet restore DataTests
+  - donet restore Tests.sln
 
 
 script:
-#  - donet /p:Configuration=Debug Tests.sln
-#  - donet ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe "./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll"
+ - msbuild /p:Configuration=Debug Tests.sln
+ - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe "./DataTests/bin/Debug/netcoreapp2.0/DataTests.dll"
 
