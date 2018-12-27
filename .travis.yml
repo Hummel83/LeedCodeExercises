@@ -2,10 +2,9 @@ language: csharp
 
 Solution: Tests.sln
 
-dotnet: 2.0.0
 mono: 5.2.0
+dotnet: 2.0.0
 dist: trusty
-
 
 install:  
 - nuget install nunit.ConsoleRunner -version 3.9.0 -OutputDirectory testrunner
@@ -17,4 +16,4 @@ script:
  - dotnet msbuild /p:Configuration=Debug Tests.sln
 
 #test
- - dotnet msbuild ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
+ - mono  ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Debug/DataTests.dll
