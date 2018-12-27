@@ -2,7 +2,7 @@ language: csharp
 
 Solution: Tests.sln
 
-mono: 5.2.0
+mono: none
 dotnet: 2.0.0
 dist: trusty
 
@@ -13,5 +13,6 @@ install:
 
 
 script:
-  - xbuild /p:Configuration=Release solution-name.sln
-  - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Release/DataTests.dll
+  - xbuild /p:Configuration=Release Tests.sln
+  - dotnet ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./DataTests/bin/Release/DataTests.dll
+- codecov : true
