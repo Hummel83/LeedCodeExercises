@@ -1,5 +1,5 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 
 
 namespace UnitTests
@@ -7,7 +7,7 @@ namespace UnitTests
     
     public class UnitTest1
     {
-        [Test]
+        [Fact]
         public void TestMethod1()
         {
         }
