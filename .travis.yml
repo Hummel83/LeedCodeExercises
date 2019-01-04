@@ -2,7 +2,7 @@ language: csharp
 
 Solution: LeedCode.sln
 
-mono: 5.10.0
+mono: latest
 dist: trusty
 
 install:
