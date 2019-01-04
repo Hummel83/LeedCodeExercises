@@ -7,7 +7,7 @@ dist: trusty
 
 install:
 - nuget restore LeedCode.sln
- - nuget install NUnit -Version 3.09.0 -OutputDirectory tools
+-nuget install NUnit -Version 3.09.0 -OutputDirectory tools
 
 script:
 - msbuild /p:Configuration=Debug LeedCode.sln 
