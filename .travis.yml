@@ -2,12 +2,12 @@ language: csharp
 
 Solution: LeedCode.sln
 
-mono: 3.12.0
+mono: 3.13.0
 dist: trusty
 
 install:
 - nuget restore LeedCode.sln
-- nuget install NUnit.ConsoleRunner -Version 3.9.0 
+# - nuget install NUnit -Version 3.9.0 
 
 script:
 - msbuild /p:Configuration=Debug LeedCode.sln 
