@@ -13,5 +13,6 @@ test_script:
 #- codecov -f "MyProject_coverage.xml -t <afb4835e-48fe-4db5-b9c8-5302cddc93c8>
 
 
-- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:".\packages\xunit.runner.console.2.4.1\tools\net471\xunit.console.x86.exe" -targetargs:"\projects\leedcodeexercises\UnitTests\bin\Debug\UnitTests.dll -noshadow" -filter:"+[UnitTests*]* -[UnitTests*]*" -output:".\MyProject_coverage.xml"
-- .\packages\<ADD PATH>\codecov.exe -f "MyProject_coverage.xml"
+- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:".\packages\xunit.runner.console.2.4.1\tools\net471\xunit.console.x86.exe" -targetargs:".\UnitTests\bin\Debug\UnitTests.dll -noshadow" -filter:"+[LeedCodeLib*]* -[UnitTests*]*" -output:".\MyProject_coverage.xml"
+
+- .\packages\Codecov.1.1.0\tools\codecov.exe -f "MyProject_coverage.xml"
