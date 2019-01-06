@@ -10,8 +10,13 @@ namespace UnitTests
     public class DatabaseTests
     {
        [Fact]
-        public void CreateDb()
+        public void CreateSqliteDatabase()
         {
+            //Arrange
+
+            //Act Create file
+
+            //Assert
             Assert.Equal(4, 4);
         }
     }
