@@ -1,5 +1,5 @@
 ﻿using LeedCodeLib;
-using Xunit;
+using NUnit.Framework;
 
 
 namespace UnitTests
@@ -7,7 +7,7 @@ namespace UnitTests
     
     public class UnitTest1
     {
-        [Fact]
+        [Test]
         public void Bratwursttest()
         {
             //Arrange
@@ -17,16 +17,16 @@ namespace UnitTests
            
 
             //Assert
-            Assert.Equal(exp, mi);
+            Assert.AreEqual(exp, mi);
         }
 
-        [Fact]
+        [Test]
         public void TestMethod2()
         {
-            Assert.Equal(4, 4);
+            Assert.AreEqual(4, 4);
         }
 
-        [Fact]
+        [Test]
         public void TestMethod3()
         {
             
