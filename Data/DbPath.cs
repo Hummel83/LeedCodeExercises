@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Reflection;
+using System.IO;
 
-namespace Data
+namespace LeedCodeDatabase
 {
-   public static class DbPath
+   public class DbPath
     {
-        public static string GetPath()
+        public string GetPathString()
         {
-            string path = "F:\\net.Projects\\Projects\\LeedCodeExercises\\Data\\bin\\Debug";
+            var path = Directory.GetCurrentDirectory();
 
             return path;
         }

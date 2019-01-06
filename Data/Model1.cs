@@ -1,9 +1,8 @@
-namespace Data
-{
-    using System;
-    using System.Data.Entity;
-    using System.Linq;
+using System.Data.Entity;
+using LeedCodeDatabase.Models;
 
+namespace LeedCodeDatabase
+{
     public class Model1 : DbContext
     {
         // Your context has been configured to use a 'Model1' connection string from your application's 
@@ -20,12 +19,6 @@ namespace Data
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        // public virtual DbSet<MyEntity> MyEntities { get; set; }
-    }
-
-    public class MyEntity
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+         public virtual DbSet<MyEntity> MyEntities { get; set; }
     }
 }

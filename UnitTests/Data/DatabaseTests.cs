@@ -1,4 +1,5 @@
 ﻿using Xunit;
+using LeedCodeDatabase;
 
 namespace UnitTests.Data
 {
@@ -8,7 +9,7 @@ namespace UnitTests.Data
         public void CreateSqliteDatabase()
         {
             //Arrange
-
+            var dbp =  new DbPath();
             //Act Create file
 
             //Assert
