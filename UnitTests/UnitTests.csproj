@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DatabaseTests.cs" />
-    <Compile Include="Lib\UnitTest1.cs" />
+    <Compile Include="Lib\BratwurstTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

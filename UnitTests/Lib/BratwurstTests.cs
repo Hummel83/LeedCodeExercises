@@ -1,10 +1,8 @@
 ﻿using LeedCodeLib;
 using Xunit;
 
-
-namespace UnitTests
+namespace UnitTests.Lib
 {
-    
     public class UnitTest1
     {
         [Fact]
