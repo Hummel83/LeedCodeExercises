@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
-using NUnit.Framework.Internal;
+using Xunit;
 
 namespace UnitTests
 {
     public class DatabaseTests
     {
-       [Test]
-        public void createDb()
+       [Fact]
+        public void CreateDb()
         {
-            Assert.AreEqual(4, 4);
+            Assert.Equal(4, 4);
         }
     }
 }
