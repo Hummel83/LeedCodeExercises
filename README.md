@@ -1,13 +1,11 @@
 ## LeedCode.com exercises
 
 
-#### Master	
-[![AppVeyor](https://img.shields.io/appveyor/ci/Hummel83/LeedCodeExercises.svg)](https://ci.appveyor.com/project/Hummel83/leedcodeexercises/branch/master)
-
+## Master	
+[![Build Status](https://travis-ci.com/Hummel83/LeedCodeExercises.svg?branch=master)](https://travis-ci.com/Hummel83/LeedCodeExercises)
 [![codecov](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/master/graph/badge.svg)](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/master)
 
-#### Dev
+## Dev
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/Hummel83/LeedCodeExercises.svg)](https://ci.appveyor.com/project/Hummel83/leedcodeexercises/branch/develop)
-
+[![Build Status](https://travis-ci.com/Hummel83/LeedCodeExercises.svg?branch=develop)](https://travis-ci.com/Hummel83/LeedCodeExercises)
 [![codecov](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/develop/graph/badge.svg)](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/develop)
