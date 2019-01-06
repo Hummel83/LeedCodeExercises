@@ -1,5 +1,5 @@
-﻿using System;
-using NUnit.Framework;
+﻿using LeedCodeLib;
+using Xunit;
 
 
 namespace UnitTests
@@ -7,9 +7,31 @@ namespace UnitTests
     
     public class UnitTest1
     {
-        [Test]
-        public void TestMethod1()
+        [Fact]
+        public void Bratwursttest()
         {
+            //Arrange
+            var bw = new Bratwurst();
+            var mi = bw.muh;
+            string exp = "hello";
+           
+
+            //Assert
+            Assert.Equal(exp, mi);
         }
+
+        [Fact]
+        public void TestMethod2()
+        {
+            Assert.Equal(4, 4);
+        }
+
+        [Fact]
+        public void TestMethod3()
+        {
+            
+        }
+
     }
+   
 }

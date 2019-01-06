@@ -7,11 +7,7 @@ dist: trusty
 
 install:
 - nuget restore LeedCode.sln
-# - nuget install NUnit -Version 3.11.0 
 
 script:
-- msbuild /p:Configuration=Debug LeedCode.sln 
-#-  ./LeedCodeExercises/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe "./LeedCodeExercises/UnitTests/bin/Debug/UnitTests.dll"     
+- msbuild /p:Configuration=Debug LeedCode.sln     
 
-after_success:
-- bash <(curl -s https://codecov.io/bash)
