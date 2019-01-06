@@ -1,4 +1,4 @@
-﻿using System;
+﻿using LeedCodeLib;
 using Xunit;
 
 
@@ -8,9 +8,16 @@ namespace UnitTests
     public class UnitTest1
     {
         [Fact]
-        public void TestMethod1()
+        public void Bratwursttest()
         {
-            Assert.Equal(4,4);
+            //Arrange
+            var bw = new Bratwurst();
+            var mi = bw.muh;
+            string exp = "hello";
+           
+
+            //Assert
+            Assert.Equal(exp, mi);
         }
 
         [Fact]
@@ -22,7 +29,7 @@ namespace UnitTests
         [Fact]
         public void TestMethod3()
         {
-            Assert.Equal(4, 4);
+            
         }
 
     }
