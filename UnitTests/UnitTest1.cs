@@ -10,6 +10,21 @@ namespace UnitTests
         [Fact]
         public void TestMethod1()
         {
+            Assert.Equal(4,4);
         }
+
+        [Fact]
+        public void TestMethod2()
+        {
+            Assert.Equal(4, 4);
+        }
+
+        [Fact]
+        public void TestMethod3()
+        {
+            Assert.Equal(4, 4);
+        }
+
     }
+   
 }
