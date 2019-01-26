@@ -3,13 +3,11 @@ image: Visual Studio 2017
 before_build:
 - nuget restore
 
-
 build:
   project: LeedCode.sln
   verbosity: minimal
 
 test_script:
-
 - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:".\packages\xunit.runner.console.2.4.1\tools\net471\xunit.console.x86.exe" -targetargs:".\UnitTests\bin\Debug\UnitTests.dll -noshadow" -filter:"+[LeedCodeLib*]* -[UnitTests*]*" -output:".\MyProject_coverage.xml"
 
 #upload report
