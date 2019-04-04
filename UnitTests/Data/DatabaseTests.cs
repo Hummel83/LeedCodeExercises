@@ -1,19 +1,15 @@
 ﻿using Xunit;
 using LeedCodeDatabase;
+using System;
 
 namespace UnitTests.Data
 {
     public class DatabaseTests
     {
-       [Fact]
-        public void CreateSqliteDatabase()
+       [Fact(Skip = "Inconclusive")]
+        public void CheckDatabaseSqliteDatabaseCreated()
         {
-            //Arrange
-            var dbp =  new DbPath();
-            //Act Create file
-
-            //Assert
-            Assert.Equal(4, 4);
+            
         }
     }
 }

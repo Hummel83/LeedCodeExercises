@@ -1,15 +1,16 @@
-﻿using System.Reflection;
-using System.IO;
+﻿using System.IO;
 
 namespace LeedCodeDatabase
 {
    public class DbPath
     {
+        public string Path { get; set; }
+       
         public string GetPathString()
         {
-            var path = Directory.GetCurrentDirectory();
+            Path = Directory.GetCurrentDirectory();
 
-            return path;
+            return Path;
         }
 
     }
