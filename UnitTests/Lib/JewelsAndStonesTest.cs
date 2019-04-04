@@ -27,9 +27,9 @@ namespace UnitTests.Lib
         {
             //Arrange
             var JaS = new JewelsAndStones();
-            var J = "z";
+            var J = "Dz";
             var S = "ZZzzADz";
-            int exep = 3;
+            int exep = 4;
 
             //Act            
             var output = JaS.NumJewelsInStones(J, S);
