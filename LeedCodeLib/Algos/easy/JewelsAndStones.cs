@@ -1,12 +1,10 @@
-﻿
-using System;
+﻿using System;
 
 namespace LeedCodeLib.Algos.easy
 {
     // 771
     public class JewelsAndStones
     {
-        
         public int NumJewelsInStones(string J, string S)
         {
             if (string.IsNullOrEmpty(J)) throw new ArgumentException("message", nameof(J));

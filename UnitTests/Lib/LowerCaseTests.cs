@@ -10,15 +10,14 @@ namespace UnitTests.Lib
         {
             //Arrange
             var lc = new LowerCase();
-            var Input = "Hello";            
+            var Input = "Hello";
             var exep = "hello";
 
-            //Act            
+            //Act
             var output = lc.ToLowerCase(Input);
 
             //Assert
             Assert.Equal(exep, output);
         }
-
     }
 }

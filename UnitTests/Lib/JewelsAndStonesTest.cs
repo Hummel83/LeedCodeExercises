@@ -14,13 +14,12 @@ namespace UnitTests.Lib
             var S = "aAAbbbb";
             int exep = 3;
 
-            //Act            
+            //Act
             var output = JaS.NumJewelsInStones(J, S);
 
             //Assert
             Assert.Equal(exep, output);
         }
-
 
         [Fact]
         public void CheckValidOutputExample2()
@@ -31,7 +30,7 @@ namespace UnitTests.Lib
             var S = "ZZzzADz";
             int exep = 4;
 
-            //Act            
+            //Act
             var output = JaS.NumJewelsInStones(J, S);
 
             //Assert
@@ -47,13 +46,11 @@ namespace UnitTests.Lib
             var S = "ab6bababD";
             int exep = 7;
 
-            //Act            
+            //Act
             var output = JaS.NumJewelsInStones(J, S);
 
             //Assert
             Assert.Equal(exep, output);
-
         }
     }
-   
 }

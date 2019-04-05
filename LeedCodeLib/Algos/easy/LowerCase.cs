@@ -1,5 +1,4 @@
-﻿
-namespace LeedCodeLib
+﻿namespace LeedCodeLib
 {
     // 709
     public class LowerCase
