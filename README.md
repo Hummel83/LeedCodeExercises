@@ -1,11 +1,12 @@
 ## LeedCode.com exercises
 
+[![CodeFactor](https://www.codefactor.io/repository/github/hummel83/leedcodeexercises/badge)](https://www.codefactor.io/repository/github/hummel83/leedcodeexercises)
 
-## Master	
-[![Build Status](https://travis-ci.com/Hummel83/LeedCodeExercises.svg?branch=master)](https://travis-ci.com/Hummel83/LeedCodeExercises)
+### Master - Brunch
+[![Build status](https://ci.appveyor.com/api/projects/status/ryr72o6s4ih46mi3/branch/master?svg=true)](https://ci.appveyor.com/project/Hummel83/leedcodeexercises/branch/master)
 [![codecov](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/master/graph/badge.svg)](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/master)
 
-## Dev
-
-[![Build Status](https://travis-ci.com/Hummel83/LeedCodeExercises.svg?branch=develop)](https://travis-ci.com/Hummel83/LeedCodeExercises)
+### Dev - Brunch
+[![Build status](https://ci.appveyor.com/api/projects/status/ryr72o6s4ih46mi3/branch/develop?svg=true)](https://ci.appveyor.com/project/Hummel83/leedcodeexercises/branch/develop)
 [![codecov](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/develop/graph/badge.svg)](https://codecov.io/gh/Hummel83/LeedCodeExercises/branch/develop)
+
