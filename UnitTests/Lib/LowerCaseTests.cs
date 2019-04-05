@@ -6,7 +6,7 @@ namespace UnitTests.Lib
     public class LowerCaseTests
     {
         [Fact]
-        public void CheckValidOutputExample3()
+        public void CheckParsingToLowerCasing()
         {
             //Arrange
             var lc = new LowerCase();
