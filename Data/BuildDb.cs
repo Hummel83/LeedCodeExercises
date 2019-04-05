@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeedCodeDatabase
+﻿namespace LeedCodeDatabase
 {
-    class BuildDb
+    internal class BuildDb
     {
         private string _dbName;
         private string _dbPath;
@@ -15,6 +9,5 @@ namespace LeedCodeDatabase
         {
             _dbName = dbName;
         }
-
     }
 }
