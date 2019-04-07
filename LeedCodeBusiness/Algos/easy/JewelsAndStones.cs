@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeedCodeLib.Algos.easy
+namespace LeedCodeBusiness.Algos.easy
 {
     // 771
     public class JewelsAndStones

@@ -1,4 +1,4 @@
-﻿namespace LeedCodeLib
+﻿namespace LeedCodeBusiness.Algos.easy
 {
     // 709
     public class LowerCase

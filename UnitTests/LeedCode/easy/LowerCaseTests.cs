@@ -1,7 +1,7 @@
-﻿using LeedCodeLib;
+﻿using LeedCodeLogic.Algos.easy;
 using Xunit;
 
-namespace UnitTests.Lib
+namespace UnitTests.LeedCode.easy
 {
     public class LowerCaseTests
     {
