@@ -1,4 +1,4 @@
-﻿using LeedCodeLogic.Algos.easy;
+﻿using LeedCodeBusiness.Algos.easy;
 using Xunit;
 
 namespace UnitTests.LeedCode.easy

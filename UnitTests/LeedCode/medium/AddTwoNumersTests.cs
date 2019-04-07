@@ -1,14 +1,9 @@
-﻿using LeedCodeLogic.Algos.medium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LeedCodeBusiness.Algos.medium;
 using Xunit;
 
 namespace UnitTests.LeedCode.medium
 {
-   public  class AddTwoNumersTests
+    public class AddTwoNumersTests
     {
         [Fact]
         public void CheckParsingToLowerCasing()
@@ -29,6 +24,5 @@ namespace UnitTests.LeedCode.medium
             //Assert
             Assert.Equal(exep, output);
         }
-
     }
 }
