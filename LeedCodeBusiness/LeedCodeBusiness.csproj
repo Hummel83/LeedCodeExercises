@@ -7,8 +7,8 @@
     <ProjectGuid>{617792B0-5F8A-49CB-851A-80BF4CDC3F12}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LeedCodeLib</RootNamespace>
-    <AssemblyName>LeedCodeLib</AssemblyName>
+    <RootNamespace>LeedCodeBusiness</RootNamespace>
+    <AssemblyName>LeedCodeBusiness</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algos\easy\JewelsAndStones.cs" />
+    <Compile Include="Algos\medium\LinkedListTwoNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Algos\easy\LowerCase.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
