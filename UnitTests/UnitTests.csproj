@@ -58,8 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DatabaseTests.cs" />
+    <Compile Include="Data\DatabaseContextTests.cs" />
     <Compile Include="Data\DbPathTests.cs" />
+    <Compile Include="Data\FakeData.cs" />
     <Compile Include="LeedCode\easy\JewelsAndStonesTest.cs" />
     <Compile Include="LeedCode\easy\LowerCaseTests.cs" />
     <Compile Include="LeedCode\medium\AddTwoNumersTests.cs" />

@@ -4,16 +4,17 @@ using Xunit;
 namespace UnitTests.Data
 {
     public class DbPathTests
-    {
-        [Fact(Skip = "Inconclusive")]
+    {      
+        [Fact]
         public void CheckDbPath()
         {
             //Arrange
             var dbp = new DbPath();
-            string expectedpath = "F:\\net.Projects\\Projects\\LeedCodeExercises\\UnitTests\\bin\\Debug";
+            string expectedpath = "F:\\DEV_Projects\\Projects\\LeedCodeExercises\\UnitTests\\bin\\Debug";
 
-            //Act Create file
+            //Act 
             var path = dbp.GetPathString();
+
             //Assert
             Assert.Equal(expectedpath, path);
         }

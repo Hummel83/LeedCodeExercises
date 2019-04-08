@@ -1,42 +1,20 @@
-﻿using System.Collections.Generic;
-
-namespace LeedCodeBusiness.Algos.medium
+﻿namespace LeedCodeBusiness.Algos.medium
 {
     // 2
     public class LinkedListTwoNumbers
     {
-        public LinkedList<int> AddTwoNumbers(LinkedList<int> List1, LinkedList<int> List2)
+        public ListNode AddTwoNumbersV2(ListNode l1, ListNode l2)
         {
-            var output = new LinkedList<int>();
-
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    int muh = (int)List1.Last() + (int)List2.First();
-            //    if (muh >= 10)
-            //    {
-            //        muh -= 10;
-            //       var ink = (int)output.Last() + 1 ;
-            //        output.RemoveLast();
-            //        output.AddLast(ink);
-            //    }
-            //    output.AddFirst(muh);
-            //    List1.RemoveLast();
-            //    List2.RemoveFirst();
-            //}
-
-            return output;
+            return Add(l1, l2, 0);
         }
 
-        public LinkedList<int> BuildLinkedList(int[] Ints)
+        private ListNode Add(ListNode l1, ListNode l2, int carry)
         {
-            var Ll = new LinkedList<int>();
+            if (l1 == null && l2 == null && carry == 0) return null;
 
-            for (int i = 0; i < Ints.Length; i++)
-            {
-                Ll.AddLast(Ints[i]);
-            }
+            var value = (l1?.Val ?? 0) + (l2?.Val ?? 0) + carry;
 
-            return Ll;
+            return new ListNode(value % 10) { Next = Add(l1?.Next, l2?.Next, value / 10) };
         }
     }
 }
