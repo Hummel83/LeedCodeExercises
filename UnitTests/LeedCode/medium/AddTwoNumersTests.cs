@@ -5,7 +5,7 @@ namespace UnitTests.LeedCode.medium
 {
     public class AddTwoNumersTests
     {
-        [Fact]
+        [Fact(Skip = "Inconclusive")]
         public void CheckParsingToLowerCasing()
         {
             //Arrange
