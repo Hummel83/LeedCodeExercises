@@ -5,7 +5,7 @@ namespace UnitTests.Data
 {
     public class DatabaseContextTests
     {
-        [Fact(Skip ="unfinished")]
+        [Fact(Skip = "unfinished")]
         public void CheckDatabaseObjectIsNotEmpty()
         {
             //Arrange
@@ -14,7 +14,6 @@ namespace UnitTests.Data
 
             //Act
             Of.Saver(Fd);
-
 
             //Assert
             Assert.NotNull(Of);

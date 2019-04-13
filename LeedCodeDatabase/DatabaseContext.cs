@@ -1,7 +1,6 @@
 using LeedCodeDatabase.Models;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace LeedCodeDatabase
 {
@@ -10,7 +9,7 @@ namespace LeedCodeDatabase
         public DatabaseContext()
         {
             Database.EnsureCreated();
-            Database.Migrate();          
+            Database.Migrate();
         }
 
         public DbSet<Beer> Beers { get; set; }
@@ -28,9 +27,5 @@ namespace LeedCodeDatabase
             var connection = new SqliteConnection(connectionStringBuilder);
             optionsBuilder.UseSqlite(connection);
         }
-
-       
-          
     }
-
 }
