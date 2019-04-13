@@ -4,7 +4,7 @@ using Xunit;
 namespace UnitTests.Data
 {
     public class DbPathTests
-    {      
+    {
         [Fact]
         public void CheckDbPath()
         {
@@ -12,7 +12,7 @@ namespace UnitTests.Data
             var dbp = new DbPath();
             string expectedpath = "F:\\DEV_Projects\\Projects\\LeedCodeExercises\\UnitTests\\bin\\Debug";
 
-            //Act 
+            //Act
             var path = dbp.GetPathString();
 
             //Assert

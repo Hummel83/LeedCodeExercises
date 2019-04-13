@@ -2,7 +2,7 @@
 
 namespace LeedCodeBusiness.Algos.easy
 {
-    // 771
+    //Number 771
     public class JewelsAndStones
     {
         public int NumJewelsInStones(string J, string S)
