@@ -46,5 +46,19 @@ namespace UnitTests.LeedCode.easy
             //Assert
             Assert.Equal(ri, output);
         }
+
+        [Fact]
+        public void TestNegativ98765Valid()
+        {
+            //Arrange
+            int input = -98765;
+            int expect = -56789;
+
+            //Act
+            int ri = new ReverseInteger().ReverseOneInteger(input);
+
+            //Assert
+            Assert.Equal(ri, expect);
+        }
     }
 }
