@@ -5,24 +5,24 @@ namespace UnitTests.LeedCode.medium
 {
     public class AddTwoNumersTests
     {
-        [Fact(Skip = "Inconclusive")]
-        public void CheckParsingToLowerCasing()
+        [Fact]
+        public void CheckLinkedListV2()
         {
-            //Arrange
             int[] Input1 = { 2, 4, 3 };
-            int[] Input2 = { 5, 6, 7 };
+            int[] Input2 = { 5, 6, 4 };
             int[] Input3 = { 7, 0, 8 };
+            ListNode Note1;
+            ListNode Note2;
+            string Note3;
 
-            var Atn = new LinkedListTwoNumbers();
-            var ll1 = Atn.BuildLinkedList(Input1);
-            var ll2 = Atn.BuildLinkedList(Input2);
-            var exep = Atn.BuildLinkedList(Input3);
-
-            //Act
-            var output = Atn.AddTwoNumbers(ll1, ll2);
-
-            //Assert
-            Assert.Equal(exep, output);
+            for (int i = 0; i < Input1.Length; i++)
+            {
+                Note1 = new ListNode(Input1[i]);
+                Note2 = new ListNode(Input2[i]);
+                Note3 = new ListNode(Input3[i]).ToString();
+                var ergeb = new LinkedListTwoNumbers().AddTwoNumbersV2(Note1, Note2).ToString();
+                Assert.Equal(ergeb, Note3);
+            }
         }
     }
 }

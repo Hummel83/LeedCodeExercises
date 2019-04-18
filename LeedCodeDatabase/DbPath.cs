@@ -6,11 +6,6 @@ namespace LeedCodeDatabase
     {
         public string Path { get; set; }
 
-        public string GetPathString()
-        {
-            Path = Directory.GetCurrentDirectory();
-
-            return Path;
-        }
+        public string GetPathString() => Directory.GetCurrentDirectory();
     }
 }
