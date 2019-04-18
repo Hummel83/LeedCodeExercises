@@ -6,7 +6,7 @@ namespace UnitTests.LeedCode.easy
     public class SumTests
     {
         [Fact]
-        public void CheckTragetSumValidWithSmallInput()
+        public void CheckTragetValidWithFourNumbersInput()
         {
             //Arrange
             int[] Input = { 2, 7, 11, 15 };
@@ -20,9 +20,41 @@ namespace UnitTests.LeedCode.easy
             //Assert
             Assert.Equal(exep, sum);
         }
+        [Fact]
+        public void CheckTragetValidWithTwoEqualNumbersInput()
+        {
+            //Arrange
+            int[] Input = { 3, 3 };
+            int target = 6;
+
+            int[] exep = { 0, 1 };
+
+            //Act
+            var sum = new Sum().TwoSum(Input, target);
+
+            //Assert
+            Assert.Equal(exep, sum);
+        }
+        [Fact]
+        public void CheckTragetValidWithoneNegativNumbersInput()
+        {
+            //Arrange
+            int[] Input = { -3, 4, 3, 90 };
+
+            int target = 0;
+
+            int[] exep = { 0, 2 };
+
+            //Act
+            var sum = new Sum().TwoSum(Input, target);
+
+            //Assert
+            Assert.Equal(exep, sum);
+        }
+
 
         [Fact]
-        public void CheckTragetSumValidWithBigInput()
+        public void CheckTragetValidWith365NumbersInputInput()
         {
             //Arrange;
             int[] Input = GetBigCollection();

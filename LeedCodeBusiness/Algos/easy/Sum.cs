@@ -4,22 +4,35 @@
     {
         public int[] TwoSum(int[] nums, int target)
         {
-            int[] _sum = new int[2];
+            int[] sum = new int[2];
+            bool targethit = false;
 
             for (int firstNumber = 0; firstNumber < nums.Length; firstNumber++)
             {
-                for (int nextNumber = 0; nextNumber < nums.Length; nextNumber++)
+                int currenFirstNumber = nums[firstNumber];              
+
+                for (int secondNumber = nums.Length - 1; secondNumber > 0; secondNumber--)
                 {
-                    if (target == nums[firstNumber] + nums[nextNumber])
+                    int currentSecondNumber = nums[secondNumber];
+
+                    if (target == currentSecondNumber + currenFirstNumber)
                     {
-                        _sum[1] = firstNumber;
-                        _sum[0] = nextNumber;
-                        break;
+                        if (secondNumber != firstNumber)
+                        {
+                            sum[0] = firstNumber;
+                            sum[1] = secondNumber;
+                            targethit = true;
+                            break;
+                        }
                     }
+                }
+                if (targethit == true)
+                {
+                    break;
                 }
             }
 
-            return _sum;
+            return sum;
         }
     }
 }
