@@ -9,16 +9,15 @@
             if (IntegerValue < 0)
             {
                 valueType = true;
-            }     
+            }
 
             string text = IntegerValue.ToString();
 
             char[] cArray = text.ToCharArray();
             string reverse = System.String.Empty;
-            
+
             for (int i = cArray.Length - 1; i > -1; i--)
             {
-              
                 reverse += cArray[i];
                 if (valueType == true && 0 == i)
                 {
@@ -36,11 +35,7 @@
             catch (System.Exception)
             {
                 return 0;
-                
-            }        
-            
+            }
         }
     }
-
-
 }

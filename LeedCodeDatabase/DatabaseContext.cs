@@ -19,10 +19,7 @@ namespace LeedCodeDatabase
         {
             string connectionStringBuilder = new
                SqliteConnectionStringBuilder()
-            {
-                DataSource = "beer.db"
-            }
-            .ToString();
+            { DataSource = "beer.db" }.ToString();
 
             var connection = new SqliteConnection(connectionStringBuilder);
             optionsBuilder.UseSqlite(connection);
