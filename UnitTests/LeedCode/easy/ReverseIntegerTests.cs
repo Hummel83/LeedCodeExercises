@@ -3,7 +3,7 @@ using Xunit;
 
 namespace UnitTests.LeedCode.easy
 {
-    public class ReverseIntegerTest
+    public class ReverseIntegerTests
     {
         [Fact]
         public void Test123Valid()

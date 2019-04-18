@@ -6,9 +6,9 @@ coverage:
     patch:
       default:
         target: 50
-    project:                  
+    project:              
       default:
-        enabled: yes
+      enabled: yes
         threshold: 1
 
 comment:

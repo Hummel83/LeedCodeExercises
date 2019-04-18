@@ -54,7 +54,7 @@ namespace UnitTests.LeedCode.easy
 
 
         [Fact]
-        public void CheckTragetValidWith365NumbersInputInput()
+        public void CheckTragetValidWith365NumbersInput()
         {
             //Arrange;
             int[] Input = GetBigCollection();
