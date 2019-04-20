@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algos\easy\JewelsAndStones.cs" />
+    <Compile Include="Algos\easy\Palidrom.cs" />
     <Compile Include="Algos\easy\ReverseInteger.cs" />
     <Compile Include="Algos\easy\Sum.cs" />
     <Compile Include="Algos\medium\LinkedListTwoNumbers.cs" />
