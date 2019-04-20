@@ -64,6 +64,7 @@
     <Compile Include="Data\FakeData.cs" />
     <Compile Include="LeedCode\easy\JewelsAndStonesTest.cs" />
     <Compile Include="LeedCode\easy\LowerCaseTests.cs" />
+    <Compile Include="LeedCode\easy\PalidromTests.cs" />
     <Compile Include="LeedCode\easy\ReverseIntegerTest.cs" />
     <Compile Include="LeedCode\easy\SumTests.cs" />
     <Compile Include="LeedCode\medium\AddTwoNumersTests.cs" />
