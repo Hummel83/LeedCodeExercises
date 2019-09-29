@@ -1,10 +1,9 @@
 using LeedCodeDatabase.Models;
-using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
 namespace LeedCodeDatabase
 {
-    public class DatabaseContext : DbContext
+    public sealed class DatabaseContext : DbContext
     {
         public DatabaseContext()
         {
@@ -17,11 +16,11 @@ namespace LeedCodeDatabase
         protected override void OnConfiguring(DbContextOptionsBuilder
             optionsBuilder)
         {
-            var connectionStringBuilder = new
-                SqliteConnectionStringBuilder {DataSource = "beer.db"}.ToString();
+            //var connectionStringBuilder = new
+            //    SqliteConnectionStringBuilder {DataSource = "beer.db"}.ToString();
 
-            var connection = new SqliteConnection(connectionStringBuilder);
-            optionsBuilder.UseSqlite(connection);
+            //var connection = new SqliteConnection(connectionStringBuilder);
+            //optionsBuilder.UseSqlite(connection);
         }
     }
 }
