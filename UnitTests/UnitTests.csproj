@@ -59,12 +59,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DatabaseContextTests.cs" />
-    <Compile Include="Data\DbPathTests.cs" />
-    <Compile Include="Data\FakeData.cs" />
     <Compile Include="LeedCode\easy\JewelsAndStonesTest.cs" />
     <Compile Include="LeedCode\easy\LowerCaseTests.cs" />
     <Compile Include="LeedCode\easy\PalidromTests.cs" />
+    <Compile Include="LeedCode\easy\ParenthesesTests.cs" />
     <Compile Include="LeedCode\easy\ReverseIntegerTest.cs" />
     <Compile Include="LeedCode\easy\SumTests.cs" />
     <Compile Include="LeedCode\medium\AddTwoNumersTests.cs" />
@@ -77,10 +75,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LeedCodeDatabase\LeedCodeDatabase.csproj">
-      <Project>{a458b57f-8eb1-41b4-a9f2-f359f31a7041}</Project>
-      <Name>LeedCodeDatabase</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LeedCodeBusiness\LeedCodeBusiness.csproj">
       <Project>{617792b0-5f8a-49cb-851a-80bf4cdc3f12}</Project>
       <Name>LeedCodeBusiness</Name>
