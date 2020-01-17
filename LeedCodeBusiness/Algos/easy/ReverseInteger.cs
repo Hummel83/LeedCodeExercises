@@ -6,6 +6,7 @@
         public int ReverseOneInteger(int IntegerValue)
         {
             bool valueType = false;
+
             if (IntegerValue < 0)
             {
                 valueType = true;
