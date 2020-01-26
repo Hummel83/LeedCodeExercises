@@ -1,14 +1,9 @@
 ﻿using LeedCodeBusiness.Algos.easy;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace UnitTests.LeedCode.easy
 {
-   public class PalidromTests
+    public class PalidromTests
     {
         [Fact]
         public void Test121Valid()
@@ -42,7 +37,7 @@ namespace UnitTests.LeedCode.easy
         public void Test10Valid()
         {
             //Arrange
-            int input = 10; //-2147483648
+            int input = 10;
             bool output = false;
 
             //Act
@@ -51,6 +46,7 @@ namespace UnitTests.LeedCode.easy
             //Assert
             Assert.Equal(pd, output);
         }
+
         [Fact]
         public void TestMinus2147483648Valid()
         {

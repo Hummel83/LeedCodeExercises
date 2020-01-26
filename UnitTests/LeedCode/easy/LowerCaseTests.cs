@@ -5,19 +5,19 @@ namespace UnitTests.LeedCode.easy
 {
     public class LowerCaseTests
     {
-        [Fact]
-        public void CheckParsingToLowerCasing()
+        [Theory]
+        [InlineData("Hello", "hello")]
+        [InlineData("BaRtWorst", "bartworst")]
+        public void CheckParsingToLowerCasing(string input, string execp)
         {
             //Arrange
             var lc = new LowerCase();
-            var Input = "Hello";
-            var exep = "hello";
 
             //Act
-            var output = lc.ToLowerCase(Input);
+            var output = lc.ToLowerCase(input);
 
             //Assert
-            Assert.Equal(exep, output);
+            Assert.Equal(execp, output);
         }
     }
 }

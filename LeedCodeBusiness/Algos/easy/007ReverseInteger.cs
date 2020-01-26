@@ -1,18 +1,23 @@
-﻿namespace LeedCodeBusiness.Algos.easy
+﻿
+namespace LeedCodeBusiness.Algos.easy
 {
     //Number 7
     public class ReverseInteger
     {
-        public int ReverseOneInteger(int IntegerValue)
+        public int ReverseOneInteger(int integerValue)
         {
+<<<<<<< HEAD:LeedCodeBusiness/Algos/easy/ReverseInteger.cs
             bool valueType = false;
 
             if (IntegerValue < 0)
             {
                 valueType = true;
             }
+=======
+            bool valueType = integerValue < 0;
+>>>>>>> 56aa67e8057ad554a89dea415a72d77c60df0afe:LeedCodeBusiness/Algos/easy/007ReverseInteger.cs
 
-            string text = IntegerValue.ToString();
+            string text = integerValue.ToString();
 
             char[] cArray = text.ToCharArray();
             string reverse = string.Empty;
