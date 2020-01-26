@@ -6,16 +6,12 @@ namespace LeedCodeBusiness.Algos.easy
     {
         public int ReverseOneInteger(int integerValue)
         {
-<<<<<<< HEAD:LeedCodeBusiness/Algos/easy/ReverseInteger.cs
             bool valueType = false;
 
-            if (IntegerValue < 0)
+            if (integerValue < 0)
             {
                 valueType = true;
             }
-=======
-            bool valueType = integerValue < 0;
->>>>>>> 56aa67e8057ad554a89dea415a72d77c60df0afe:LeedCodeBusiness/Algos/easy/007ReverseInteger.cs
 
             string text = integerValue.ToString();
 

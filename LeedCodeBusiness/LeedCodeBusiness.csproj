@@ -36,18 +36,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algos\easy\Parentheses.cs" />
     <Compile Include="Algos\easy\JewelsAndStones.cs" />
     <Compile Include="Algos\easy\Palidrom.cs" />
-    <Compile Include="Algos\easy\Parentheses.cs" />
-    <Compile Include="Algos\easy\771JewelsAndStones.cs" />
-    <Compile Include="Algos\easy\009Palidrom.cs" />
     <Compile Include="Algos\easy\RemoveParentheses.cs" />
-    <Compile Include="Algos\easy\007ReverseInteger.cs" />
+    <Compile Include="Algos\easy\ReverseInteger.cs" />
     <Compile Include="Algos\easy\Sum.cs" />
     <Compile Include="Algos\medium\LinkedListTwoNumbers.cs" />
     <Compile Include="Algos\medium\ListNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Algos\easy\709LowerCase.cs" />
+    <Compile Include="Algos\easy\LowerCase.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
