@@ -62,11 +62,8 @@
     <Compile Include="LeedCode\easy\JewelsAndStonesTest.cs" />
     <Compile Include="LeedCode\easy\LowerCaseTests.cs" />
     <Compile Include="LeedCode\easy\PalidromTests.cs" />
-<<<<<<< HEAD
     <Compile Include="LeedCode\easy\ParenthesesTests.cs" />
-=======
     <Compile Include="LeedCode\easy\RemoveParenthesesTests.cs" />
->>>>>>> 56aa67e8057ad554a89dea415a72d77c60df0afe
     <Compile Include="LeedCode\easy\ReverseIntegerTest.cs" />
     <Compile Include="LeedCode\easy\SumTests.cs" />
     <Compile Include="LeedCode\medium\AddTwoNumersTests.cs" />
