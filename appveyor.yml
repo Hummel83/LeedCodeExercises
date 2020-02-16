@@ -14,7 +14,7 @@ platform: Any CPU
 #patch
 assembly_info:
   patch: true
-  file: 'C:\LeedCodeExercises\LeedCodeBusiness\Properties\AssemblyInfo.*'
+  file: '**\AssemblyInfo.*'
   assembly_version: '{version}'
   assembly_file_version: '{version}'  
 
