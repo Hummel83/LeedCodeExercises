@@ -30,7 +30,5 @@ build:
 test_script:
 - OpenCover.Console.exe -register:administrator -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\UnitTests\bin\Debug\UnitTests.dll -noshadow" -output:".\MyProject_coverage.xml"
 
+#upload
 - codecov -f "MyProject_coverage.xml"
-
-
-
