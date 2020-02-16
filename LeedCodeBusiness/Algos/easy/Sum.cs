@@ -4,19 +4,18 @@
     {
         public int[] TwoSum(int[] nums, int target)
         {
-            int[] sum = new int[2];
-            bool targethit = false;
+            var sum = new int[2];
+            var targethit = false;
 
-            for (int firstNumber = 0; firstNumber < nums.Length; firstNumber++)
+            for (var firstNumber = 0; firstNumber < nums.Length; firstNumber++)
             {
-                int currenFirstNumber = nums[firstNumber];              
+                var currenFirstNumber = nums[firstNumber];
 
-                for (int secondNumber = nums.Length - 1; secondNumber > 0; secondNumber--)
+                for (var secondNumber = nums.Length - 1; secondNumber > 0; secondNumber--)
                 {
-                    int currentSecondNumber = nums[secondNumber];
+                    var currentSecondNumber = nums[secondNumber];
 
                     if (target == currentSecondNumber + currenFirstNumber)
-                    {
                         if (secondNumber != firstNumber)
                         {
                             sum[0] = firstNumber;
@@ -24,12 +23,9 @@
                             targethit = true;
                             break;
                         }
-                    }
                 }
-                if (targethit == true)
-                {
-                    break;
-                }
+
+                if (targethit) break;
             }
 
             return sum;

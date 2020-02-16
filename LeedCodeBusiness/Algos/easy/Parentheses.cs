@@ -10,35 +10,25 @@ namespace LeedCodeBusiness.Algos.easy
         public string RemoveOuterParentheses(string TestString)
         {
             var muh = TestString.ToCharArray().ToList();
-          
-            string output = "";
+
+            var output = "";
             var builder = new StringBuilder();
 
             try
             {
-                for (int i = 0; i < muh.Count - 1; i++)
-                {
+                for (var i = 0; i < muh.Count - 1; i++)
                     if (muh[i] == muh[i + 1])
-                    {
                         muh.RemoveAt(i);
-                    }
-                }
 
-                foreach (var bla in muh)
-                {
-                    builder.Append(bla);
-                }
+                foreach (var bla in muh) builder.Append(bla);
 
-                if (builder.Length > 0)
-                {
-                    output = builder.ToString();
-                }
+                if (builder.Length > 0) output = builder.ToString();
             }
             catch (Exception)
             {
-                output= TestString;
+                output = TestString;
             }
-            
+
             return output;
         }
     }

@@ -1,4 +1,4 @@
-image: Visual Studio 2019
+image: Visual Studio 2017
 
 version: 1.0.{build}
 
@@ -14,10 +14,9 @@ platform: Any CPU
 #patch
 assembly_info:
   patch: true
-  file: '*\LeedCodeBusiness\Properties\AssemblyInfo.*'
+  file: 'C:\LeedCodeExercises\LeedCodeBusiness\Properties\AssemblyInfo.*'
   assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
+  assembly_file_version: '{version}'  
 
 before_build:
 - nuget restore
