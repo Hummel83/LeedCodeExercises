@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace LeedCodeBusiness.Algos.easy
 {
     //Number 7
@@ -6,38 +7,37 @@ namespace LeedCodeBusiness.Algos.easy
     {
         public int ReverseOneInteger(int integerValue)
         {
-            bool valueType = false;
+            var valueType = false;
 
-            if (integerValue < 0)
-            {
-                valueType = true;
-            }
 
-            string text = integerValue.ToString();
+            if (integerValue < 0) valueType = true;
 
-            char[] cArray = text.ToCharArray();
-            string reverse = string.Empty;
+            var text = integerValue.ToString();
 
-            for (int i = cArray.Length - 1; i > -1; i--)
+            var cArray = text.ToCharArray();
+            var reverse = string.Empty;
+
+            for (var i = cArray.Length - 1; i > -1; i--)
             {
                 reverse += cArray[i];
-                if (valueType == true && i==0)
+                if (valueType && i == 0)
                 {
                     reverse = reverse.Remove(cArray.Length - 1);
                     reverse = reverse.Insert(0, "-");
                 }
             }
 
+            var rev = 0;
             try
             {
-                var rev = int.Parse(reverse);
-
-                return rev;
+                if (reverse != null) rev = int.Parse(reverse);
             }
-            catch (System.Exception)
+            catch (Exception)
             {
                 return 0;
             }
+
+            return rev;
         }
     }
 }

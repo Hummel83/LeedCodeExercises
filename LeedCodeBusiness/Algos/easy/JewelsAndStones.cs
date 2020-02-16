@@ -10,24 +10,18 @@ namespace LeedCodeBusiness.Algos.easy
             if (string.IsNullOrEmpty(J)) throw new ArgumentException("message", nameof(J));
             if (string.IsNullOrEmpty(S)) throw new ArgumentException("message", nameof(S));
 
-            int Output = 0;
+            var Output = 0;
 
-            char[] inputchars1 = J.ToCharArray();
-            int JCount = inputchars1.Length;
+            var inputchars1 = J.ToCharArray();
+            var JCount = inputchars1.Length;
 
-            char[] inputchars2 = S.ToCharArray();
-            int SCount = inputchars2.Length;
+            var inputchars2 = S.ToCharArray();
+            var SCount = inputchars2.Length;
 
-            for (int SCountIndex = 0; SCountIndex < SCount; SCountIndex++)
-            {
-                for (int JCountIndex = 0; JCountIndex < JCount; JCountIndex++)
-                {
-                    if (inputchars1[JCountIndex] == inputchars2[SCountIndex])
-                    {
-                        Output++;
-                    }
-                }
-            }
+            for (var SCountIndex = 0; SCountIndex < SCount; SCountIndex++)
+            for (var JCountIndex = 0; JCountIndex < JCount; JCountIndex++)
+                if (inputchars1[JCountIndex] == inputchars2[SCountIndex])
+                    Output++;
             return Output;
         }
     }

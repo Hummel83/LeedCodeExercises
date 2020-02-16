@@ -1,4 +1,4 @@
-image: Visual Studio 2019
+image: Visual Studio 2017
 
 version: 1.0.{build}
 
@@ -14,21 +14,26 @@ platform: Any CPU
 #patch
 assembly_info:
   patch: true
-  file: '**\LeedCodeBusiness\Properties\AssemblyInfo.*'
+  file: '**\AssemblyInfo.*'
   assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
+  assembly_file_version: '{version}'  
 
 before_build:
 - nuget restore
+- choco install opencover.portable
+- choco install codecov
 
 build:
   project: CodingExercise.sln
   verbosity: minimal
 
 test_script:
-- .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe -register:user -target:".\packages\xunit.runner.console.2.4.1\tools\net472\xunit.console.x86.exe" -targetargs:".\UnitTests\bin\Debug\UnitTests.dll -noshadow" -output:".\MyProject_coverage.xml"
+#- .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe -register:user -target:".\packages\xunit.runner.console.2.4.1\tools\net472\xunit.console.x86.exe" -targetargs:".\UnitTests\bin\Debug\UnitTests.dll -noshadow" -output:".\MyProject_coverage.xml"
 
 
-#upload report
-- .\packages\Codecov.1.10.0\tools\codecov.exe -f "MyProject_coverage.xml"
+- OpenCover.Console.exe -register:administrator -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\UnitTests\bin\Debug\UnitTests.dll -noshadow" -output:".\MyProject_coverage.xml"
+
+- codecov -f "MyProject_coverage.xml"
+
+
+

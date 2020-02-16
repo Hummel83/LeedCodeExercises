@@ -8,14 +8,11 @@ namespace LeedCodeBusiness.Algos.easy
     {
         public bool IsPalindrome(long x)
         {
-            bool pali = false;
+            var pali = false;
 
             var abs = string.Concat(Math.Abs(x).ToString().Reverse());
             var muh = long.Parse(abs);
-            if (muh == x)
-            {
-                pali = true;
-            }
+            if (muh == x) pali = true;
             return pali;
         }
     }
