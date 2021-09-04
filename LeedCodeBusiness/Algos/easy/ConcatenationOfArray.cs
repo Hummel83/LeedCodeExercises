@@ -10,7 +10,7 @@
 
             for (int i = 0; i < cn; i++)
             {
-                vl[i] = nums[i]; ;
+                vl[i] = nums[i]; 
                 vl[i + cn] = nums[i];
             }
 
