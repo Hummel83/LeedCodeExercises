@@ -1,5 +1,6 @@
 ﻿namespace LeedCodeBusiness.Algos.easy
 {
+    //number 1
     public class Sum
     {
         public int[] TwoSum(int[] nums, int target)
