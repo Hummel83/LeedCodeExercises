@@ -19,9 +19,9 @@ namespace LeedCodeBusiness.Algos.easy
             var SCount = inputchars2.Length;
 
             for (var SCountIndex = 0; SCountIndex < SCount; SCountIndex++)
-            for (var JCountIndex = 0; JCountIndex < JCount; JCountIndex++)
-                if (inputchars1[JCountIndex] == inputchars2[SCountIndex])
-                    Output++;
+                for (var JCountIndex = 0; JCountIndex < JCount; JCountIndex++)
+                    if (inputchars1[JCountIndex] == inputchars2[SCountIndex])
+                        Output++;
             return Output;
         }
     }

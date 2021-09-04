@@ -13,7 +13,7 @@ namespace UnitTests.LeedCode.easy
             var rop = new Parentheses().RemoveOuterParentheses(InputValue);
 
             //Assert
-            Assert.Equal(ExceptValue,rop);
+            Assert.Equal(ExceptValue, rop);
         }
 
         [Theory]

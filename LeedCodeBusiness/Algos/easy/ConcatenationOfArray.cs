@@ -6,18 +6,15 @@
         public int[] GetConcatenation(int[] nums)
         {
             int cn = nums.Length;
-            int[] vl = new int[cn*2];             
+            int[] vl = new int[cn * 2];
 
             for (int i = 0; i < cn; i++)
             {
-                vl[i] = nums[i];                 ;
-                vl[i +cn] = nums[i];
-
-            }          
+                vl[i] = nums[i]; ;
+                vl[i + cn] = nums[i];
+            }
 
             return vl;
-
         }
-
     }
 }
