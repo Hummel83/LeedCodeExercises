@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Algos\easy\ConcatenationOfArray.cs" />
+    <Compile Include="Algos\easy\LongestCommonPre.cs" />
     <Compile Include="Algos\easy\Parentheses.cs" />
     <Compile Include="Algos\easy\JewelsAndStones.cs" />
     <Compile Include="Algos\easy\Palidrom.cs" />
