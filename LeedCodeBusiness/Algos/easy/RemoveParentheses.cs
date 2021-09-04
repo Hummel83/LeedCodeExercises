@@ -17,7 +17,6 @@ namespace LeedCodeBusiness.Algos.easy
                         output = S.Remove(0, i);
             }
 
-
             return output;
         }
     }

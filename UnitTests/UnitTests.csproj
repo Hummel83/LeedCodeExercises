@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeedCode\easy\ConcatenationOfArrayTests.cs" />
     <Compile Include="LeedCode\easy\JewelsAndStonesTest.cs" />
     <Compile Include="LeedCode\easy\LowerCaseTests.cs" />
     <Compile Include="LeedCode\easy\PalidromTests.cs" />

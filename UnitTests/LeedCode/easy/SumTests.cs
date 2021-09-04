@@ -20,6 +20,7 @@ namespace UnitTests.LeedCode.easy
             //Assert
             Assert.Equal(exep, sum);
         }
+
         [Fact]
         public void CheckTragetValidWithTwoEqualNumbersInput()
         {
@@ -35,6 +36,7 @@ namespace UnitTests.LeedCode.easy
             //Assert
             Assert.Equal(exep, sum);
         }
+
         [Fact]
         public void CheckTragetValidWithoneNegativNumbersInput()
         {
@@ -51,7 +53,6 @@ namespace UnitTests.LeedCode.easy
             //Assert
             Assert.Equal(exep, sum);
         }
-
 
         [Fact]
         public void CheckTragetValidWith365NumbersInputInput()

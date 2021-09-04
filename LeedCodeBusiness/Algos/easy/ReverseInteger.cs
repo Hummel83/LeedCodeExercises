@@ -9,7 +9,6 @@ namespace LeedCodeBusiness.Algos.easy
         {
             var valueType = false;
 
-
             if (integerValue < 0) valueType = true;
 
             var text = integerValue.ToString();
