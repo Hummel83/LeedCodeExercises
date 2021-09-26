@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace LeedCodeBusiness.Algos.easy
 {
     public class SingleNum
     {
-
-
-
         public int SingleNumber(int[] nums)
         {
-
-            return 0;
+            return nums.Aggregate(0, (x, y) => x ^ y);
         }
     }
 }
