@@ -42,6 +42,7 @@
     <Compile Include="Algos\easy\Palidrom.cs" />
     <Compile Include="Algos\easy\RemoveParentheses.cs" />
     <Compile Include="Algos\easy\ReverseInteger.cs" />
+    <Compile Include="Algos\easy\SingleNum.cs" />
     <Compile Include="Algos\easy\Sum.cs" />
     <Compile Include="Algos\medium\LinkedListTwoNumbers.cs" />
     <Compile Include="Algos\medium\ListNode.cs" />
