@@ -67,6 +67,7 @@
     <Compile Include="LeedCode\easy\ParenthesesTests.cs" />
     <Compile Include="LeedCode\easy\RemoveParenthesesTests.cs" />
     <Compile Include="LeedCode\easy\ReverseIntegerTest.cs" />
+    <Compile Include="LeedCode\easy\SingleNumTests.cs" />
     <Compile Include="LeedCode\easy\SumTests.cs" />
     <Compile Include="LeedCode\medium\AddTwoNumersTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
