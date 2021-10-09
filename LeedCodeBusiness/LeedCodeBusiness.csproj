@@ -37,10 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Algos\easy\ConcatenationOfArray.cs" />
+    <Compile Include="Algos\easy\LongestCommonPre.cs" />
     <Compile Include="Algos\easy\Parentheses.cs" />
     <Compile Include="Algos\easy\JewelsAndStones.cs" />
     <Compile Include="Algos\easy\Palidrom.cs" />
-    <Compile Include="Algos\easy\RemoveParentheses.cs" />
     <Compile Include="Algos\easy\ReverseInteger.cs" />
     <Compile Include="Algos\easy\SingleNum.cs" />
     <Compile Include="Algos\easy\Sum.cs" />

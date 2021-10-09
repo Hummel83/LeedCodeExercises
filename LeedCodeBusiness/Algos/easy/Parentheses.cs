@@ -1,35 +1,30 @@
-﻿using System;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 
 namespace LeedCodeBusiness.Algos.easy
 {
     //1021. Remove Outermost Parentheses
     public class Parentheses
     {
-        public string RemoveOuterParentheses(string TestString)
+        public string RemoveOuterParentheses(string s)
         {
-            var muh = TestString.ToCharArray().ToList();
-
-            var output = "";
-            var builder = new StringBuilder();
-
-            try
+            int level = 0;
+            var sb = new StringBuilder(s.Length);
+            for (int i = 0; i < s.Length; i++)
             {
-                for (var i = 0; i < muh.Count - 1; i++)
-                    if (muh[i] == muh[i + 1])
-                        muh.RemoveAt(i);
-
-                foreach (var bla in muh) builder.Append(bla);
-
-                if (builder.Length > 0) output = builder.ToString();
+                if (s[i] == '(')
+                {
+                    if (level != 0)
+                        sb.Append(s[i]);
+                    level++;
+                }
+                else
+                {
+                    if (level != 1)
+                        sb.Append(s[i]);
+                    level--;
+                }
             }
-            catch (Exception)
-            {
-                output = TestString;
-            }
-
-            return output;
+            return sb.ToString();
         }
     }
 }
