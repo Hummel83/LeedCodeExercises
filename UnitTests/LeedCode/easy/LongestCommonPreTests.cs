@@ -39,7 +39,7 @@ namespace UnitTests.LeedCode.easy
 
         private static string[] BuildInput1()
         {
-            var input = new string[2];
+            var input = new string[3];
             input[0] = "flower";
             input[1] = "flow";
             input[2] = "flight";
@@ -47,7 +47,7 @@ namespace UnitTests.LeedCode.easy
         }
         private static string[] BuildInput2()
         {
-            var input = new string[2];
+            var input = new string[3];
             input[0] = "dog";
             input[1] = "racecar";
             input[2] = "car";

@@ -23,7 +23,7 @@ namespace UnitTests.LeedCode.easy
 
         private static int[] BuildInput()
         {
-            var input = new int[2];
+            var input = new int[3];
             input[0] = 1;
             input[1] = 2;
             input[2] = 1;
@@ -32,7 +32,7 @@ namespace UnitTests.LeedCode.easy
 
         private static int[] BuilExpectedOutput()
         {
-            var input = new int[5];
+            var input = new int[6];
             input[0] = 1;
             input[1] = 2;
             input[2] = 1;
