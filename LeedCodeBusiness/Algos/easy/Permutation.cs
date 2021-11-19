@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeedCodeBusiness.Algos.easy
+﻿namespace LeedCodeBusiness.Algos.easy
 {
     // nr 1920
     public class Permutation
@@ -10,8 +8,7 @@ namespace LeedCodeBusiness.Algos.easy
             int n = 1001;
             for (int i = 0; i < nums.Length; i++)
             {
-                nums[i] = nums[i] + (nums[nums[i]] % n) * n;
-              
+                nums[i] = nums[i] + ((nums[nums[i]] % n) * n);
             }
 
             for (int i = 0; i < nums.Length; i++)
