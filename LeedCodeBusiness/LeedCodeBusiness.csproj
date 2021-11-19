@@ -41,6 +41,7 @@
     <Compile Include="Algos\easy\Parentheses.cs" />
     <Compile Include="Algos\easy\JewelsAndStones.cs" />
     <Compile Include="Algos\easy\Palidrom.cs" />
+    <Compile Include="Algos\easy\Permutation.cs" />
     <Compile Include="Algos\easy\ReverseInteger.cs" />
     <Compile Include="Algos\easy\SingleNum.cs" />
     <Compile Include="Algos\easy\Sum.cs" />
